@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام الهدايا</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>نظام الهدايا</h1>
+        </header>
+        
+        <main>
+            <form id="giftForm" novalidate>
+                <div class="form-group">
+                    <h2>معلوماتك</h2>
+                    <div class="input-group">
+                        <label for="senderName">اسمك:</label>
+                        <input type="text" id="senderName">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="senderPhone">رقم جوالك:</label>
+                        <input type="tel" id="senderPhone" placeholder="+966XXXXXXXXX">
+                        <div class="error-message"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h2>المستلمين</h2>
+                    <div id="recipientsContainer">
+                        <!-- Recipient entries will be added here -->
+                    </div>
+                    <button type="button" id="addRecipient" class="btn-secondary">إضافة مستلم آخر</button>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">إرسال الهدايا</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="../js/user/user.js"></script>
+</body>
+</html> 

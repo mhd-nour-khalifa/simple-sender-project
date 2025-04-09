@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - نظام الهدايا</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>لوحة التحكم - نظام الهدايا</h1>
+        </header>
+        
+        <main>
+            <div class="controls">
+                <button id="sendAllBtn" class="btn-primary">
+                    <i class="icon">➤</i> إرسال للجميع
+                </button>
+                <button id="deleteSelectedBtn" class="btn-danger">
+                    <i class="icon">✕</i> حذف المحدد
+                </button>
+            </div>
+
+            <div class="table-container">
+                <table id="messagesTable">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="selectAll"></th>
+                            <th>اسم المستلم</th>
+                            <th>رقم الجوال</th>
+                            <th>اسم المرسل</th>
+                            <th>رقم المرسل</th>
+                            <th>الحالة</th>
+                            <th>التاريخ</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody id="messagesBody">
+                        <!-- Messages will be populated here via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="../js/admin/admin.js"></script>
+</body>
+</html> 
